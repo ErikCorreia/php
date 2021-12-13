@@ -6,9 +6,15 @@
     echo "</pre>";
     echo "<hr/>";
 
-    echo '<h2>Olá '.$_POST['username'].'. Enviamos um email de verificação para '.$_POST['email'].'</h2>';
+    //Validar o formulário e redirecionar o usuario para pagina de cadastro com sucesso
+
+    echo '<h2>Olá '.$_POST['username'].'. Inserimos seus dados no  banco de dados </h2>';
+
     if(strlen($_POST['password']) < 6){
-        header('location:/?login=error');
+        header('location:/?login=error&username='.$_POST['username'].'&email='.$_POST['email']);
+    }
+    if(strlen($_POST['username']) < 6){
+        header('location:/?login=invalid_username&username='.$_POST['username'].'&email='.$_POST['email']);
     }
 
 ?>
