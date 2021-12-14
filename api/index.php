@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="container">
-        <div style="width: 95%; margin: auto 15%;">
+        
             <?php foreach($pokemons->pokemon as $pokemon){ ?>
                 <div class="card">
                     <div class="card-img">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
             <?php } ?>
-        </div>
+        
     </div>
 </body>
 </html>
