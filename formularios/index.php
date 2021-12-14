@@ -1,6 +1,6 @@
 <?php
 
-    echo "<h1>Formulario</h1> <hr/>";
+    echo "<h1>Formulágirio</h1> <hr/>";
 ?>
 
 <link rel="stylesheet" href="index.css">
