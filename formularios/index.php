@@ -1,6 +1,6 @@
 <?php
 
-    echo "<h1>Formulágirio</h1> <hr/>";
+    echo "<h1>Formulário</h1> <hr/>";
 
 ?>
 
