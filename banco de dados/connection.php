@@ -20,9 +20,8 @@
             }
         }
         function checkAll(){
-            $query = "SELECT * FROM usuarios";
-            $stmt = $this->connection->prepare($query);
-            $stmt->execute();
+            $query = $this->connection->prepare("SELECT * FROM usuarios");
+            $stmt->execute($query);
 
         }
     }
